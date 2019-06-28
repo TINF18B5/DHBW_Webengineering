@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Aufgabe - Input</title>
+    </head>
+    <body>
+        <form action="https://google.de" method="get">
+            <label for="in">Daten für Google: </label>
+            <input type="text" name="q" id="in" />
+            <input type="submit"/>
+        </form>
+        <br/><br/>
+        <form method="get">
+            <label for="hex">Nur Hexadezimal</label>
+            <input type="text" pattern="[a-fA-F\d]+" id="hex" name="hex"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
