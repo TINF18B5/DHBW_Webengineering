@@ -4,7 +4,7 @@ describe("Calculator", function() {
         calculator = new Calculator(3, 4);
     });
     it("sum7", function() {
-        expect(calculator.sum()).toEqual(7);
+        expect(calculator.sum()).toEqual(7); //toBe(7) would Compare with ===
     });
     it("diff-1", function() {
         expect(calculator.diff()).toEqual(-1);

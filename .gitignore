@@ -2,3 +2,9 @@
 .recommnders/
 eclipse_neon2_we
 Servers/
+.project
+.classpath
+*.class
+*.jar
+/Testing/Selenium/*
+/Testing/SelniumCalculatorTest/bin
