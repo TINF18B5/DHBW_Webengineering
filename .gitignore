@@ -6,5 +6,6 @@ Servers/
 .classpath
 *.class
 *.jar
-/Testing/Selenium/*
-/Testing/SelniumCalculatorTest/bin
+Webengineering_II/Testing/Selenium/*
+Webengineering_II/Testing/SelniumCalculatorTest/bin
+/Webengineering_II/spring-framework-5.2.1.RELEASE
