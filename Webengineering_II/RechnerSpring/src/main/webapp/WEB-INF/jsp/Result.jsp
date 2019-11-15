@@ -10,10 +10,10 @@
 <body>
 	<h1>Rechner</h1>
 	<span id="ergebnis"> Das Ergebnis von <c:out
-			value="${bean.zahl1 }" /> <c:out
-			value="${bean.operation }" /> <c:out
-			value="${bean.zahl2 }" /> ist <c:out
-			value="${bean.result }" />
+			value="${bean.zahl1}" /> <c:out
+			value="${bean.operation}" /> <c:out
+			value="${bean.zahl2}" /> ist <c:out
+			value="${bean.result}" />
 	</span>
 </body>
 </html>

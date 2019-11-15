@@ -11,7 +11,7 @@
 <body>
 	<%-- Show form --%>
 	<h1>Rechner</h1>
-	<form method="post" action="/Validate">
+	<form method="post" action="/rechner">
 		<p>Geben Sie bitte folgende Daten ein:</p>
 		<p>
 			<label for="zahl1">Zahl1</label> <input name="zahl1" type="text"
