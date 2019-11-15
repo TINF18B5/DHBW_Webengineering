@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import rechner.CalculatorBean;
-
 @Controller
 @RequestMapping("/Validate")
 public class OKController {
@@ -23,7 +21,7 @@ public class OKController {
 		if (bean.getOK()) {
 			return "Result";
 		}
-		return "Error";
+		return "Form";
 	}
 
 }
