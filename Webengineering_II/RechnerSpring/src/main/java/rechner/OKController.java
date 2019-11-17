@@ -10,20 +10,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/rechner")
 public class OKController {
 	@PostMapping
-	public String checkOK(@RequestParam("zahl1") String z1, @RequestParam("zahl2") String z2,
-			@RequestParam("Operation") String op, CalculatorBean bean) {
-		bean.setZahl1(z1);
-		bean.setZahl2(z2);
-		bean.setOperation(op);
-		if (bean.getOK()) {
-			System.out.println(bean.getResult());
+	public String checkOK(CalculatorBean calculatorBean) {
+		if (calculatorBean.getOK()) {
 			return "Result";
 		}
 		return "Form";
 	}
 
 	@GetMapping
-	public String start(CalculatorBean bean) {
+	public String start(CalculatorBean calculatorBean) {
+		System.out.println(calculatorBean.toString());
 		return "Form";
 	}
 
