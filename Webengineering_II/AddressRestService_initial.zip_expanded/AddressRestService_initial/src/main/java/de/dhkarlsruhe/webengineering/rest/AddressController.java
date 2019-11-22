@@ -35,6 +35,7 @@ public class AddressController {
 	}
 
 	@DeleteMapping("/addresses/{id}")
+	@ResponseStatus(HttpStatus.ACCEPTED)
 	public void deleteAddress(@PathVariable("id") String id) {
 		addressMap.remove(id);
 	}
