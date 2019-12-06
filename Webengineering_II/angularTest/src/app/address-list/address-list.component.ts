@@ -9,9 +9,13 @@ import { Address } from '../address';
 })
 export class AddressListComponent implements OnInit {
   addressList:Address[]
-  constructor(listService:AddressListService){
-    this.addressList = listService.getAdresses();
+  constructor(private listService:AddressListService){
   }
-  ngOnInit(){}
+  ngOnInit(){
+    this.getAddresses();
+  }
 
+  getAddresses(){
+    this.listService.getAdresses().subscribe(addresses => this.addressList = addresses);
+  }
 }
