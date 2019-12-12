@@ -12,10 +12,14 @@ export class AddressListComponent implements OnInit {
   constructor(private listService:AddressListService){
   }
   ngOnInit(){
-    this.getAddresses();
+    this.getAddressesLocal();
   }
 
-  getAddresses(){
-    this.listService.getAdresses().subscribe(addresses => this.addressList = addresses);
+  getAddressesLocal(){
+    this.addressList = this.listService.getAdressesLocal();
+  }
+
+  getAddressesFromAPI(){
+    this.listService.getAdressesFromAPI().subscribe(addresses => this.addressList = addresses);
   }
 }

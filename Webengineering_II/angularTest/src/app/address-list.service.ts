@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Address } from './address';
+import { ADDRESSES } from './mock-addresses';
 
 
 @Injectable({
@@ -9,12 +10,16 @@ import { Address } from './address';
 })
 export class AddressListService {
 
-  private url = "/addresses";
+  private url = "/adresses";
 
   constructor(private http: HttpClient){}
 
-  getAdresses() :Observable<Address[]>{
+  getAdressesFromAPI() :Observable<Address[]>{
      return this.http.get<Address[]>(this.url);
+  }
+
+  getAdressesLocal() : Address[]{
+    return ADDRESSES;
   }
 
 }

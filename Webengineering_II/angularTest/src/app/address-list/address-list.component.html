@@ -1,13 +1,27 @@
-<table>
-    <tr *ngFor="let address of addressList">
-        <td>ID: {{address.id}}</td>
-        <td>{{address.addressform}}{{address.christianname}} {{address.name}}</td>
-        <td>Email: {{address.email}}</td>
-        <td>Phone: {{address.phone}}</td>
-        <td>Mobile: {{address.mobile}}</td>
-        <td>{{address.street}} {{address.number}}</td>
-        <td>{{address.postcode}} {{address.city}}</td>
-        <td>{{address.country}}</td>
-        <td>Birthday: {{address.birthday}}</td>
-    </tr>
-</table>
+<div id="address-list">
+    <h2>Addresses</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Mobile</th>
+            <th>Street & Number</th>
+            <th>Postcode & City</th>
+            <th>Country</th>
+            <th>Birthday</th>
+        </tr>
+        <tr *ngFor="let address of addressList">
+            <td>{{address.id}}</td>
+            <td>{{address.addressform}} {{address.christianname}} {{address.name}}</td>
+            <td>{{address.email}}</td>
+            <td>{{address.phone}}</td>
+            <td>{{address.mobile}}</td>
+            <td>{{address.street}} {{address.number}}</td>
+            <td>{{address.postcode}} {{address.city}}</td>
+            <td>{{address.country}}</td>
+            <td>{{address.birthday}}</td>
+        </tr>
+    </table>
+</div>
